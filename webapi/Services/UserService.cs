@@ -8,16 +8,22 @@ using demo.Models.vo;
 
 namespace demo.Services
 {
-    public class UserService:IUserService
+    public class UserService : IUserService
     {
         private IUserRepository _repository;
 
-        public UserService(IUserRepository repository) {
+        public UserService(IUserRepository repository)
+        {
             _repository = repository;
         }
 
         //查询用户分页列表
         public async Task<ResponseData<List<User>>> GetUsers(UserListInput input)
+        {
+            return await _repository.GetUsers(input);
+        }
+        
+        public async Task<ResponseData<List<User>>> GetUsers(LoginInput input)
         {
             return await _repository.GetUsers(input);
         }

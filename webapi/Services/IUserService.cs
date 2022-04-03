@@ -11,6 +11,7 @@ namespace demo.Services
     {
         //查询用户分页列表
         Task<ResponseData<List<User>>> GetUsers(UserListInput input);
+        Task<ResponseData<List<User>>> GetUsers(LoginInput input);
 
         //查询用户详情
         Task<ResponseData<User>> GetUserById(string id);

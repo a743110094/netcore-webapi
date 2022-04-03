@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace demo.Models
 {
@@ -13,8 +11,7 @@ namespace demo.Models
         [Key]
         [Column("id")]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [MaxLength(64)]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// 登录名
@@ -22,17 +19,58 @@ namespace demo.Models
         [Column("login_name")]
         [MaxLength(64)]
         public string LoginName { get; set; }
-
+        
+          
+        
+        /// <summary>
+        /// 密码
+        /// </summary>
         [Column("password")]
         [MaxLength(64)]
         public string Password { get; set; }
+
+
+
+        /// <summary>
+        /// 昵称
+        /// </summary>
+        [Column("nick_name")]
+        [MaxLength(64)]
+        public string NickName { get; set; }
+
+
+         /// <summary>
+        /// 真实姓名
+        /// </summary>
+        [Column("real_name")]
+        [MaxLength(64)]
+        public string RealName { get; set; }
+
+
 
         /// <summary>
         /// 性别 
         /// </summary>
         [Column("gender")]
-        [MaxLength(16)]
-        public string Gender { get; set; }
+ 
+        public int Gender { get; set; }
+
+        
+         /// <summary>
+        /// 头像
+        /// </summary>
+        [Column("avatar")]
+        [MaxLength(255)]
+        public string Avatar { get; set; }
+
+
+
+         /// <summary>
+        /// 生效标志
+        /// </summary>
+        [Column("enable_flag")]
+        public int EnableFlag { get; set; }
+
 
         [Column("create_time")]
         public DateTime? CreateTime { get; set; }

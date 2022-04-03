@@ -15,7 +15,7 @@ namespace demo
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://*:85"); 
+                    webBuilder.UseUrls("http://*:8636"); 
                 });
     }
 }

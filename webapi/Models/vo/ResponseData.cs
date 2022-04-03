@@ -4,7 +4,7 @@ namespace demo.Models.vo
 {
     public class ResponseData<T>
     {
-        public String Msg { get; set; } = "success";
+        public String Message { get; set; } = "success";
 
         public int Code { get; set; } = 200;
 
@@ -12,4 +12,6 @@ namespace demo.Models.vo
 
         public T Data { get; set; }
     }
+
+   
 }

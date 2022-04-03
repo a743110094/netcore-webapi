@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using demo.Models;
+using demo.Models.vo;
 
 namespace demo.Repository
 {
@@ -12,8 +13,16 @@ namespace demo.Repository
         public DemoContext (DbContextOptions<DemoContext> options)
             : base(options)
         {
+           
         }
 
-        public DbSet<demo.Models.User> User { get; set; }
+        public DbSet<Article> Article { get; set; }
+        public DbSet<Remark> Remark { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<UserRole> UserRole { get; set; }
+        public DbSet<UserToken> UserToken { get; set; }
+        //VO
+        public virtual DbSet<ArticleRemark> ArticleRemark { get; set; }
     }
 }

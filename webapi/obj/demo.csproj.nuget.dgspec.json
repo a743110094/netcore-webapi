@@ -1,31 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kerwin\\Desktop\\demo\\server\\demo.csproj": {}
+    "C:\\Users\\lenovo\\source\\repos\\netcore-webapi\\webapi\\demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kerwin\\Desktop\\demo\\server\\demo.csproj": {
+    "C:\\Users\\lenovo\\source\\repos\\netcore-webapi\\webapi\\demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerwin\\Desktop\\demo\\server\\demo.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\netcore-webapi\\webapi\\demo.csproj",
         "projectName": "demo",
-        "projectPath": "C:\\Users\\kerwin\\Desktop\\demo\\server\\demo.csproj",
-        "packagesPath": "C:\\Users\\kerwin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerwin\\Desktop\\demo\\server\\obj\\",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\netcore-webapi\\webapi\\demo.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\repos\\netcore-webapi\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kerwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -36,8 +37,17 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.15, )"
@@ -59,6 +69,10 @@
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.22, )"
+            },
+            "Packable.newtonjson": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             }
           },
           "imports": [
@@ -79,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
